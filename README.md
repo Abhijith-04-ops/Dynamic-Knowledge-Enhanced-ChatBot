@@ -12,26 +12,35 @@ This project implements a Retrieval-Augmented Generation (RAG) chatbot that dyna
 
 ## Architecture
 
-User Query → Retriever → Context Injection → LLM → Answer
+```User Query → Retriever → Context Injection → LLM → Answer```
 
 ## Setup Instructions
 
 ### 1. Create virtual environment
+```
 python -m venv venv
-venv\Scripts\activate  (Windows)
+venv\Scripts\activate
+```
 
 ### 2. Install dependencies
+```
 pip install -r requirements.txt
+```
 
 ### 3. Pull Ollama model
+```
 ollama pull llama3
+```
 
 ### 4. Build knowledge base
+```
 python data_updater.py
+```
 
 ### 5. Run chatbot
+```
 python chat_bot.py
-
+```
 ## Technologies Used
 - LangChain (LCEL)
 - FAISS
